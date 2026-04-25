@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Animaciones Abeja</title>
+        <style>
+            *{
+                padding:0px;
+            }
+            .contenedor{
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                position: relative;/*provoca el centrado del div contenedor*/
+                margin: 0 auto;/*provoca el centrado del div contenedor*/
+                overflow: hidden;/*ocultar cuando esta el cuadradito fuera del contenedor*/
+                background-image: url(img/girasoles.webp);
+                background-size: cover;
+            }
+            .cuadradito{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left:-100px;
+                top: 50px;
+
+
+                animation: cuadradito 10s infinite;
+            }
+            @keyframes cuadradito{
+                0%{
+                    left:-800px;
+                    top: 300px;
+                    rotate: 0deg;
+                }
+                50%{
+                    left:150px;
+                    top: 0px;
+                    rotate: 60deg;
+                }
+                100%{
+                     left:400px;
+                    top: 150px;
+                    rotate: 0deg;                   
+                }
+            }
+            .cuadraditoB{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left:-100px;
+                top: 50px;
+
+                animation: cuadraditoB 10s infinite;
+            }
+            @keyframes cuadraditoB{
+                0%{
+                    left:-100px;
+                    top:50px;
+                }
+                20%{
+                    top:90px;
+                }
+                 40%{
+                top:40px;
+                }   
+                60%{
+                    top:100px;
+                }
+                80%{
+                    top:60px;
+                }
+                100%{
+                    left:400px;
+                    top:50px;
+                }
+            }
+            .cuadraditoC{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left:-200px;
+                top: 50px;
+
+                animation: cuadraditoC 8s infinite;
+            }
+            @keyframes cuadraditoC{
+                0%{
+                    left:-100px;
+                    top:70px;
+                }
+                20%{
+                    top:90px;
+                }
+                 40%{
+                    top:120px;
+                }   
+                60%{
+                    top:40px;
+                }
+                80%{
+                    top:130px;
+                }
+                100%{
+                    left:400px;
+                    top:70px;
+                }
+            }           
+            .cuadradito img{
+                width: 50px;
+                height: 50px;
+            }
+            .cuadraditoB img{
+                width: 50px;
+                height: 50px;
+            }
+            .cuadraditoC img{
+                width: 40px;
+                height: 40px;
+            }  
+        </style>
+    </head>
+   <body>
+    <div class="contenedor">
+        <div class="cuadradito">
+            <img src="./img/abeji.png" alt=" ">
+        </div>
+        <div class="cuadraditoB">
+            <img src="./img/abeji.png" alt=" ">  
+        </div>
+        <div class="cuadraditoC">
+            <img src="./img/abeji.png" alt=" ">  
+        </div>
+    </div>
+    
+    
+    
+   </body> 
+</html>
